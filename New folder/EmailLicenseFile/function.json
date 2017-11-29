@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "licenses/{filename}.lic",
+      "connection": "AzureWebJobsStorage"
+    }
+  ],
+  "disabled": false
+}
