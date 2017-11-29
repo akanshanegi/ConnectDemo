@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "orders": {
+            "matchCondition": {
+                "route": "order"
+            },
+            "backendUri": "https://demofunctions12.azurewebsites.net/api/newpurchase?code=mvj8aNWacTbyaVdV/gZrBpP/9Db5iixGD2g2hWaagAtXRgeKHHqL6g==&clientId=default",
+            "responseOverrides": {
+                "response.statusCode": "200",
+                "response.body": "{\r\n    \"message\":\"Invoked\"\r\n}"
+            }
+        }
+    }
+}
